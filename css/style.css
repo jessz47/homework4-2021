@@ -66,8 +66,7 @@ a{
 /*Req 6a*/
 td{
   text-align: center;
-  border-top-width: 2px;
-  border-top-color: #000000;
+  border-top: 2px solid black;
   padding: 10px;
 }
 
@@ -89,7 +88,7 @@ td{
 
 /*Req 6d*/
 tr:nth-child(odd) {
-  background-color: rgba(126, 8, 32, 0);
+  background-color: rgb(209, 209, 209, 0)
 }
 tr:nth-child(even) {
   background-color: #D1D1D1;
