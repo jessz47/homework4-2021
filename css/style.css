@@ -32,7 +32,7 @@ body{
   margin: 1.2em;
   background-size: cover;
   background-position: center;
-  background-image: url("images/pigeon-background"); 
+  background-image: url("../images/pigeon-background.JPEG"); 
   background-repeat: no-repeat;
   background-color: #DDDDDD;
 }
@@ -45,7 +45,7 @@ h1{
 
 }
 
-p{
+p {
   padding-top: 15px;
 }
 
@@ -76,16 +76,15 @@ td{
   color: #FFFFFF;
   min-width: 125px;
   padding: 10px;
-  text-align: center;
+  vertical-align: middle ;
   text-transform: uppercase;
   background-color: #7e0820;
 
 }
 /*Req 6c*/
 .rowhead{
-  border-color: #000000;
-  border: 2px;
-
+  border-top: 2px solid;
+  border-right: 2px solid;
 }
 
 /*Req 6d*/
@@ -104,34 +103,31 @@ tr:hover{
 
 /*Req 7*/
 table {
-    border: 2px solid #000000;
-    /*border-collapse:separate;
-    border-radius: 10px;
-    -moz-border-radius:6px;*/
-}
-
-thead tr:first-child th:first-child{
-  border-left:solid black 1px;
-  border-top:solid black 1px;
-}
-
-th {
-  border-top: none;
-}
-
-td:first-child, th:first-child {
-  border-left: none;
-}
-
-.center {
-  margin-left:auto; 
-  margin-right:auto;
   border: 2px solid #000000;
+  margin:auto; 
   border-collapse:separate;
   border-radius: 10px;
 }
 
-/*Req 8*/
+
+thead tr:first-child th:first-child{
+border-top-left-radius: 10px;
+}
+
+thead tr:last-child th:last-child{
+  border-top-right-radius: 10px;
+}
+
+tbody tr:last-child th:first-child{
+  border-bottom-left-radius: 10px;
+}
+
+tbody tr:last-child td:last-child {
+  border-bottom-right-radius: 10px;
+}
+
+
+
 footer{
   width:100%;
   background:#000000;
@@ -139,5 +135,10 @@ footer{
   color: #FFFFFF;
   min-height: 75px;
   position: fixed; 
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  margin-bottom: 0px;
+
 }
 
