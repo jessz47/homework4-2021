@@ -88,8 +88,8 @@ td{
 
 /*Req 6d*/
 tr:nth-child(odd) {
-  background-color: rgb(209, 209, 209, 0)
 }
+
 tr:nth-child(even) {
   background-color: #D1D1D1;
 }
